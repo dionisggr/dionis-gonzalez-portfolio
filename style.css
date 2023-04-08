@@ -235,7 +235,7 @@ main #top {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 1.5rem);
+  height: calc(100vh - 1rem);
   padding: 0 2rem;
   background-color: #222;
   color: #fff;
