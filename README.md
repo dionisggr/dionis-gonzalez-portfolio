@@ -34,46 +34,46 @@ I also write about technologies and life when I find a chance. Step into the mat
 
 ## 💻 Technical Skills
 ### **Frontend**
-   - HTML
-   - CSS
-   - JavaScript
-   - jQuery
-   - React
-   - Redux
-   - Vue.js
-   - Vuetify
+- HTML
+- CSS
+- JavaScript
+- jQuery
+- React
+- Redux
+- Vue.js
+- Vuetify
 
 ### **Backend**
-   - Python
-   - Node.js
-   - Express.js
-   - TypeScript
-   - Knex.js
-   - OAuth
-   - JWT
-   - Firebase
+- Python
+- Node.js
+- Express.js
+- TypeScript
+- Knex.js
+- OAuth
+- JWT
+- Firebase
 
 ### **Databases**
-   - SQL/PostgreSQL
-   - BigQuery
+- SQL/PostgreSQL
+- BigQuery
 
 ### **Data Engineering & ETL**
-   - Airflow
-   - DBT
+- Airflow
+- DBT
 
 ### **Testing**
-   - Jest
-   - Cypress
-   - WebDriverIO
-   - Mocha
-   - Chai
-   - Supertest
-   - Enzyme
-   - Cucumber
+- Jest
+- Cypress
+- WebDriverIO
+- Mocha
+- Chai
+- Supertest
+- Enzyme
+- Cucumber
 
 ### **CI/CD & Cloud**
-   - CircleCI
-   - Google Cloud Platform
+- CircleCI
+- Google Cloud Platform
 
 ---
 
