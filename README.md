@@ -100,7 +100,7 @@ Technologies used:
 
 ---
 
-<img src="./img/langcards.png" alt="Flickshare App" style="max-width: 300px; margin-top: 1rem;"/>
+<img src="./img/langcards.png" alt="Flickshare App" style="width: 300px; margin-top: 1rem;"/>
 
 [**LangCards**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
