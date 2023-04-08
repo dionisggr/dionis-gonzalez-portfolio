@@ -235,12 +235,12 @@ main #top {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 1.5rem);
   padding: 0 2rem;
   background-color: #222;
   color: #fff;
   text-align: center;
-  margin-top: 3.5rem;
+  margin-top: 3rem;
 }
 
 main #top p {
@@ -413,7 +413,7 @@ main #top p {
 
 .filter-bar button {
   margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 25px;
   border: 1px solid #22222269;
   font-size: 1rem;
@@ -424,7 +424,7 @@ main #top p {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   height: fit-content;
   min-width: fit-content;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.319);
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.319);
 }
 
 .filter-bar button:hover {
@@ -523,7 +523,7 @@ main #top p {
   max-width: 375px;
   width: 90%;
   border-radius: 25px;
-  padding: 1rem 1rem 2.5rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .projects .project:hover {
@@ -593,7 +593,7 @@ main #top p {
 }
 
 .projects .project .technologies {
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 1rem 0;
   height: fit-content;
   min-height: 100px;
   width: 100%;
@@ -1559,6 +1559,7 @@ footer .social-links img {
 
   .filter-bar button {
     margin: 0.5rem 0.3rem;
+    padding: 0.5rem 1rem;
   }
 
   .blog-card .description h1 {
