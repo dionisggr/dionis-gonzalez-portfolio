@@ -34,19 +34,19 @@ I also write about technologies and life when I find a chance. Step into the mat
 
 ## 💻 Technical Skills
 ### **Frontend**
-HTML&nbsp;&nbsp;|&nbsp;&nbsp;CSS&nbsp;&nbsp;|&nbsp;&nbsp;JavaScript&nbsp;&nbsp;|&nbsp;&nbsp;jQuery&nbsp;&nbsp;|&nbsp;&nbsp;React&nbsp;&nbsp;|&nbsp;&nbsp;Redux&nbsp;&nbsp;|&nbsp;&nbsp;Vue.js&nbsp;&nbsp;|&nbsp;&nbsp;Vuetify
+**HTML**&nbsp;&nbsp;|&nbsp;&nbsp;**CSS**&nbsp;&nbsp;|&nbsp;&nbsp;**JavaScript**&nbsp;&nbsp;|&nbsp;&nbsp;**jQuery**&nbsp;&nbsp;|&nbsp;&nbsp;**React**&nbsp;&nbsp;|&nbsp;&nbsp;**Redux**&nbsp;&nbsp;|&nbsp;&nbsp;Vue.**js**&nbsp;&nbsp;|&nbsp;&nbsp;**Vuetify**
 
 ### **Backend**
-Python&nbsp;&nbsp;|&nbsp;&nbsp;Node.js&nbsp;&nbsp;|&nbsp;&nbsp;Express.js&nbsp;&nbsp;|&nbsp;&nbsp;TypeScript&nbsp;&nbsp;|&nbsp;&nbsp;Knex.js&nbsp;&nbsp;|&nbsp;&nbsp;OAuth&nbsp;&nbsp;|&nbsp;&nbsp;JWT&nbsp;&nbsp;|&nbsp;&nbsp;Firebase
+**Python**&nbsp;&nbsp;|&nbsp;&nbsp;**Node.js**&nbsp;&nbsp;|&nbsp;&nbsp;**Express.js**&nbsp;&nbsp;|&nbsp;&nbsp;**TypeScript**&nbsp;&nbsp;|&nbsp;&nbsp;**Knex.js**&nbsp;&nbsp;|&nbsp;&nbsp;**OAuth**&nbsp;&nbsp;|&nbsp;&nbsp;**JWT**&nbsp;&nbsp;|&nbsp;&nbsp;**Firebase**
 
 ### **Databases**
-SQL/PostgreSQL&nbsp;&nbsp;|&nbsp;&nbsp;BigQuery
+**SQL/PostgreSQL**&nbsp;&nbsp;|&nbsp;&nbsp;**BigQuery**
 
 ### **Data Engineering & ETL**
-Airflow&nbsp;&nbsp;|&nbsp;&nbsp;DBT
+**Airflow**&nbsp;&nbsp;|&nbsp;&nbsp;**DBT**
 
 ### **Testing**
-Jest&nbsp;&nbsp;|&nbsp;&nbsp;Cypress&nbsp;&nbsp;|&nbsp;&nbsp;WebDriverIO&nbsp;&nbsp;|&nbsp;&nbsp;Mocha&nbsp;&nbsp;|&nbsp;&nbsp;Chai&nbsp;&nbsp;|&nbsp;&nbsp;Supertest&nbsp;&nbsp;|&nbsp;&nbsp;Enzyme&nbsp;&nbsp;|&nbsp;&nbsp;Cucumber&nbsp;&nbsp;|&nbsp;&nbsp;
+**Jest**&nbsp;&nbsp;|&nbsp;&nbsp;**Cypress**&nbsp;&nbsp;|&nbsp;&nbsp;**WebDriverIO**&nbsp;&nbsp;|&nbsp;&nbsp;**Mocha**&nbsp;&nbsp;|&nbsp;&nbsp;**Chai**&nbsp;&nbsp;|&nbsp;&nbsp;**Supertest**&nbsp;&nbsp;|&nbsp;&nbsp;**Enzyme**&nbsp;&nbsp;|&nbsp;&nbsp;**Cucumber**
 ### **CI/CD & Cloud**
 - CircleCI
 - Google Cloud Platform
