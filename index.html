@@ -36,11 +36,16 @@
         </ul>
       </nav>
       <button class="menu-toggle mobile">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <div class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="close hide">
+          <span class="icon">&times;</span>
+        </div>
       </button>
-      <nav class="mobile hide">
+      <nav class="mobile">
         <ul class="nav-list">
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -122,13 +127,13 @@
           <h4>Testing <span> / Others</span></h4>
           <p class="description">
             I prioritize thorough testing with proficiency in a range of
-            development tools/platforms
+            development tools/platforms.
           </p>
           <p>Languages<span> / Tools</span></p>
           <ul class="languages">
-            <li>Google Cloud Platform</li>
             <li>Firebase</li>
             <li>CircleCI</li>
+            <li>Google Cloud Platform</li>
             <li>Jest</li>
             <li>Cypress</li>
             <li>WebDriverIO</li>
@@ -144,10 +149,9 @@
       <section id="projects" class="projects">
         <h3>My Recent Work</h3>
         <h4>
-          Here are a few past design projects I&rsquo;ve worked on. Want to see
-          more?
+          Here are a few past projects I&rsquo;ve worked on. For more stuff, 
           <a href="mailto:dionisggr@gmail.com" target="_blank" class="email-me"
-            >Email me!</a
+            >email me!</a
           >
         </h4>
         <div class="filter-bar">
@@ -185,10 +189,13 @@
         <div class="project-list"></div>
         <a
           href="https://github.com/dionisggr?tab=repositories"
+          target="_blank"
           alt="See more projects on GitHub"
           class="more-projects"
         >
-          <img src="./github.svg" alt="GitHub Logo" /> See more on GitHub
+          <img src="./github.svg" alt="GitHub Logo" class="light"/>
+          <img src="./github.png" alt="GitHub Logo" class="dark"/>
+          See more on GitHub
         </a>
       </section>
       <section id="collaboration" class="collaboration">
@@ -197,7 +204,7 @@
           I&rsquo;m always open to discussing product development work or
           partnership opportunities.
         </p>
-        <button class="conversation-btn"><a href="#">Let's Chat!</a></button>
+        <button class="conversation-btn"><a href="#contact">Let's Chat!</a></button>
       </section>
       <section id="testimonials" class="testimonials">
         <h3>Testimonials</h3>
@@ -205,7 +212,8 @@
         <div class="testimonial-list">
           <a
             href="https://www.linkedin.com/in/douglasede-webdev"
-            alt="Testimonial from Douglas Ede, Product Manager of Valley Prescast, Inc"
+            target="_blank"
+            alt="Douglas Ede LinkedIn"
             class="testimonial"
           >
             <img class="picture" src="doug.png" alt="Profile picture" />
@@ -219,7 +227,8 @@
           </a>
           <a
             href="https://www.linkedin.com/in/lilifuentes"
-            alt="Testimonial from Lili Fuentes, software engineer from The Mostley Fool"
+            target="_blank"
+            alt="Lili Fuentes LinkedIn"
             class="testimonial"
           >
             <img class="picture" src="lili.jpeg" alt="Profile picture" />
@@ -233,7 +242,8 @@
           </a>
           <a
             href="https://uk.linkedin.com/in/mariusbanea"
-            alt="Testimonial from Marius Banea, Senior Developer from Hansen Technologies"
+            target="_blank"
+            alt="Marius Banea LinkedIn"
             class="testimonial"
           >
             <img class="picture" src="marius.jpeg" alt="Profile picture" />
@@ -257,7 +267,7 @@
           <button class="swe">Software Engineering</button>
           <button class="nw">Networking</button>
           <button class="js">JavaScript</button>
-          <button class="hci">Human-Computer Interaction</button>
+          <button class="hci">HCI</button>
           <button class="ux">User Experience</button>
           <button class="ai">Artificial Intelligence</button>
           <button class="ucd">User-Centered Design</button>
@@ -265,7 +275,7 @@
         </div>
         <div class="blog-list"></div>
       </section>
-      <section id="contact" class="contact contact-form">
+      <section id="contact" class="contact">
         <div class="title-container">
           <h3
             class="typer"
@@ -278,8 +288,18 @@
           ></h3>
         </div>
         <div class="container">
+          <form
+            action="https://formspree.io/f/xnqkzqjw"
+            method="POST"
+            class="contact-form-inputs"
+          >
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" placeholder="Message" rows="6" required></textarea>
+            <button type="submit">Send</button>
+          </form>
           <div class="my-contact-info">
-            <p><span class="location">Location</span>: Denver, CO</p>
+            <p class="location"><span>Location</span>: Denver, CO</p>
             <p>
               <img
                 src="./email.jpeg"
@@ -299,7 +319,7 @@
                 alt="LinkedIn icon"
                 class="contact-icon linkedin"
               />
-              <a href="#" alt="Dionis Gonzalez LinkedIn">/dionis-gonzalez</a>
+              <a href="https://www.linkedin.com/in/dionis-gonzalez/" alt="Dionis Gonzalez LinkedIn" target="_blank">/dionis-gonzalez</a>
             </p>
             <p>
               <img
@@ -307,95 +327,110 @@
                 alt="GitHub icon"
                 class="contact-icon github"
               />
-              <a href="#" alt="Dionis Gonzalez GitHub" target="_blank"
+              <a href="https://github.com/dionisggr" alt="Dionis Gonzalez GitHub" target="_blank"
                 >/dionisggr</a
               >
-            </p>
-            <section class="survey">
-              <h4>Take my mini-survey!</h4>
-              <div class="survey-content hide">
-                <form>
-                  <fieldset>
-                    <legend>If you could choose one superpower:</legend>
-                    <label
-                      ><input
-                        type="radio"
-                        name="superpower"
-                        value="time_travel"
-                        required
-                      />
-                      Time travel</label
-                    >
-                    <label
-                      ><input
-                        type="radio"
-                        name="superpower"
-                        value="teleportation"
-                        required
-                      />
-                      Teleportation</label
-                    >
-                  </fieldset>
-                  <fieldset>
-                    <legend>What's more important to you?</legend>
-                    <label
-                      ><input
-                        type="radio"
-                        name="importance"
-                        value="journey"
-                        required
-                      />
-                      The journey</label
-                    >
-                    <label
-                      ><input
-                        type="radio"
-                        name="importance"
-                        value="destination"
-                        required
-                      />
-                      The destination</label
-                    >
-                  </fieldset>
-                  <fieldset>
-                    <legend>
-                      In your opinion, which factor has a greater influence on
-                      human progress?
-                    </legend>
-                    <label
-                      ><input
-                        type="radio"
-                        name="influence"
-                        value="social_change"
-                        required
-                      />
-                      Social change</label
-                    >
-                    <label
-                      ><input
-                        type="radio"
-                        name="influence"
-                        value="tech_innovation"
-                        required
-                      />
-                      Tech innovation</label
-                    >
-                  </fieldset>
-                  <button type="submit">Submit</button>
-                </form>
-              </div>
-            </section>
+            </p> 
           </div>
-          <form
-            action="https://formspree.io/f/xnqkzqjw"
-            method="POST"
-            class="contact-form-inputs"
-          >
-            <input type="text" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="Email" />
-            <textarea name="message" placeholder="Message" rows="6"></textarea>
-            <button type="submit">Send</button>
-          </form>
+          <section class="survey">
+            <p class="close hide">&times;</p>
+            <h4>Take my mini-survey!</h4>
+            <div class="survey-content hide">
+              <form>
+                <fieldset>
+                  <legend>If you could choose one superpower:</legend>
+                  <label
+                    for="superpower1"
+                    ><input
+                      type="radio"
+                      name="entry.669368945"
+                      value="Time travel"
+                      id="superpower1"
+                      required
+                    />
+                    Time travel</label
+                  >
+                  <label
+                    for="superpower2"
+                    ><input
+                      type="radio"
+                      name="entry.669368945"
+                      id="superpower2"
+                      value="Teleportation"
+                      required
+                    />
+                    Teleportation</label
+                  >
+                </fieldset>
+                <fieldset>
+                  <legend>What's more important to you?</legend>
+                  <label
+                    for="importance1"
+                    ><input
+                      type="radio"
+                      name="entry.842141453"
+                      value="The journey"
+                      id="importance1"
+                      required
+                    />
+                    The journey</label
+                  >
+                  <label
+                    for="importance2"
+                    ><input
+                      type="radio"
+                      name="entry.842141453"
+                      value="The destination"
+                      id="importance2"
+                      required
+                    />
+                    The destination</label
+                  >
+                </fieldset>
+                <fieldset>
+                  <legend>
+                    In your opinion, which factor has a greater influence on
+                    human progress?
+                  </legend>
+                  <label
+                    for="influence1"
+                    ><input
+                      type="radio"
+                      name="entry.1241803994"
+                      value="Social change"
+                      id="influence1"
+                      required
+                    />
+                    Social change</label
+                  >
+                  <label
+                    for="influence2"
+                    ><input
+                      type="radio"
+                      name="entry.1241803994"
+                      value="Tech innovation"
+                      id="influence2"
+                      required
+                    />
+                    Tech innovation</label
+                  >
+                </fieldset>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+            <section class="post-survey error hide">
+              <p class="close hide">&times;</p>
+              <h4>Sorry, something went wrong.</h4>
+              <p class="survey-error-content">
+                Try again later, or contact me if it persists.
+              </p>
+            </section>
+            <section class="post-survey success hide">
+              <p class="close hide">&times;</p>
+              <h4>You're awesome!</h4>
+              <p>Thanks for participating.</p>
+            </section>
+          </section>
         </div>
       </section>
     </main>
@@ -405,14 +440,19 @@
         "Software should solve real problems, not create new ones."
       </p>
       <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Twitter</a>
+        <a href="https://www.linkedin.com/in/dionis-gonzalez/" alt="Dionis Gonzalez LinkedIn" target="_blank">
+          <img src="./linkedin_bw.svg" alt="LinkedIn icon" class="contact-icon linkedin" />
+        </a>
+        <a href="https://github.com/dionisggr" alt="Dionis Gonzalez GitHub" target="_blank">
+          <img src="./github.svg" alt="GitHub icon" class="contact-icon github" />
+        </a>
+        <a href="https://drive.google.com/file/d/1R5c_-jpCvC3_e1QuuR5Ph1NXcsrhzc77/view?usp=sharing" alt="Dionis Gonzalez Resume" target="_blank">
+          <img src="./cv.svg"></img>
+        </a>
       </div>
-      <p class="created-by">
-        Copyright © 2023. Dionis Gonzalez. All rights reserved.
-      </p>
+      <p class="created-by">Copyright © 2023. Dionis Gonzalez.<br class="long-divider"/> All rights reserved.</p>
     </footer>
+    
     <script src="pong.js" type="module"></script>
     <script src="script.js" type="module"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>

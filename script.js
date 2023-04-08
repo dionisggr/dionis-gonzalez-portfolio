@@ -4,7 +4,7 @@ const projectListSection = document.querySelector(".project-list");
 const allProjects = [
   {
     title: "FlickShare",
-    description: "A web app that allows users to share their favorite movies and TV shows with their friends.",
+    description: "Personalized movie suggestions based from full custom lists, and not just one movie!",
     technologies: [
       "React",
       "CSS",
@@ -24,7 +24,7 @@ const allProjects = [
   },
   {
     title: "LangCards",
-    description: "A web app that allows users to create flashcards for learning languages.",
+    description: "A Spanish language trainer app that uses spaced repetition for effective learning.",
     technologies: [
       "React",
       "CSS",
@@ -46,7 +46,7 @@ const allProjects = [
   },
   {
     title: "TabGPT",
-    description: "A web app that allows users to share their favorite movies and TV shows with their friends.",
+    description: "An AI-powered Chrome extension that answer questions from the text in active tabs.",
     technologies: ["HTML", "CSS", "JavaScript", "Chrome API", "GPT"],
     image: "./tabgpt.png",
     url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
@@ -85,7 +85,7 @@ const allArticles = [
   },
   {
     title: "HCI: It Takes Two to Tango",
-    subtitle: "LOREM IPSUM DOLOR SIT AMET",
+    subtitle: "TECHNOLOGY FOR HUMANS, NOT ROBOTS",
     description: "The field of Human-Computer Interaction has become an increasingly interesting topic these days, and for good reason! We rely on our computers for everything, from work to entertainment, and it's safe to say they're not going away anytime soon. So what is this field about? What is user-centered design, and what should these mean to you?",
     tags: [
       {
@@ -125,6 +125,7 @@ const allArticles = [
 let projectFilters = [];
 let articleFilters = [];
 const badgesInPng = ['cypress'];
+let isSurveyTaken = false;
 
 function addButtonToggleListeners() {
   document.querySelectorAll(".projects .filter-bar button").forEach((el) => {
@@ -153,7 +154,7 @@ function toggleFilter({ target }, type) {
     projectFilters = filters;
     
     updateProjects();
-  } else if (type === "articles") {
+  } else {
     articleFilters = filters;
     
     updateArticles();
@@ -166,9 +167,11 @@ function updateProjects() {
   }
 
   const filteredProjects = allProjects.filter((project) => {
-    return projectFilters.every((filter) =>
-      project.technologies.includes(filter)
-    );
+    return projectFilters.every((filter) => {
+      const technologies = project.technologies.map((tech) => tech.toLowerCase());
+
+      return technologies.includes(filter)
+    });
   });
 
   if (!filteredProjects.length) {
@@ -303,7 +306,7 @@ function renderProjects(projects) {
     h3.innerText = project.title;
     p.innerText = project.description;
     a.textContent = "View Project";
-    a.href = project.url;
+    // a.href = project.url;
 
     children.forEach((child) => div.appendChild(child));
     projectListSection.appendChild(div);
@@ -312,51 +315,199 @@ function renderProjects(projects) {
 
 function addSurveyListener() {
   const survey = document.querySelector(".survey");
+  const h4 = survey.querySelector("h4");
   const surveyContent = survey.querySelector(".survey-content");
+  const form = surveyContent.querySelector('form')
+  const closeBtn = survey.querySelector(".survey .close");
+  const surveyError = document.querySelector(".post-survey.error");
+  const surveySuccess = document.querySelector(".post-survey.success");
 
-  document.addEventListener("click", ({ target }) => {
-    if (target == survey) {
-      surveyContent.classList.toggle("hide");
-    } else if (
-      !surveyContent.classList.contains("hide") &&
-      !survey.contains(target)
-    ) {
-      surveyContent.classList.add("hide");
+  [h4, closeBtn].forEach(el => el.addEventListener("click", ({ target }) => {
+
+    if (isSurveyTaken) {
+      surveyError.classList.add('hide');
+      surveySuccess.classList.add('hide');
+      closeBtn.classList.add('hide');
+      h4.innerText = 'Thanks for participating!';
     }
-  });
+
+    if (navigator.userAgentData.mobile || window.innerWidth < 865) {
+      survey.classList.toggle('mobile');
+      toggleModal(survey);
+    }
+
+    if (!isSurveyTaken && survey.contains(target)) {
+      surveyContent.classList.toggle("hide");
+      closeBtn.classList.toggle("hide");
+    } else if (!surveyContent.classList.contains("hide")) {
+      surveyContent.classList.add("hide");
+      closeBtn.classList.add("hide");
+    }
+  }));
+
+  form.addEventListener('submit', async evt => {
+    evt.preventDefault();
+  
+    const formData = new FormData(form);
+    const params = new URLSearchParams();
+    const cors = 'https://cors-anywhere.herokuapp.com/';
+    const site = 'https://docs.google.com/forms/d/e/1FAIpQLScZO7Uk0NfkvJi4t288cMPumhZzOtBnCZMgQVX2LKBxrNOEWQ/formResponse';
+  
+    formData.forEach((value, key) => {
+      params.append(key, value)
+    })
+
+    try {
+      await fetch(cors + site, {
+        method: 'POST',
+        body: params
+      });
+
+      isSurveyTaken = true;
+
+      surveyContent.classList.add('hide');
+      surveySuccess.classList.remove('hide');
+    } catch (err) {
+      surveyContent.classList.add('hide');
+      surveyError.classList.remove('hide');
+    }
+  })
 }
 
 function addNavListeners() {
+  const mobileNav = document.querySelector("nav.mobile");
   const headerLogo = document.querySelector(".me");
   const navLinks = document.querySelectorAll("nav a");
+  const chatBtn = document.querySelector(".conversation-btn");
 
-  [headerLogo, ...navLinks].forEach((link) => {
+  [headerLogo, chatBtn, ...navLinks].forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
 
       const sectionId = event.target.hash;
       const section = document.querySelector(sectionId);
-      const offset = event.target != headerLogo ? section.offsetTop - 100 : 0;
+      const offset = event.target != headerLogo ? section.offsetTop - 70 : 0;
 
+      mobileNav.classList.toggle("open");
       window.scrollTo(0, offset);
     });
   });
 }
 
 function setMobileMenuListener() {
-  const menuButton = document.querySelector(".menu-toggle");
   const navMenu = document.querySelector("nav.mobile");
+  const menuButton = document.querySelector(".menu-toggle");
+  const bars = menuButton.querySelector(".bars");
+  const closeBtn = menuButton.querySelector(".menu-toggle .close");
 
   menuButton.addEventListener("click", () => {
-    console.log('works')
-    navMenu.classList.toggle("hide");
+    navMenu.classList.toggle("open");
+    closeBtn.classList.toggle("hide");
+    bars.classList.toggle("hide");
   });
+}
+
+function setPrintListener() {
+  const redirectToResumePDF = () => {
+    const resumePdfUrl = 'https://drive.google.com/file/d/1R5c_-jpCvC3_e1QuuR5Ph1NXcsrhzc77/view?usp=sharing';
+    window.location.href = resumePdfUrl;
+  }
+  
+  const handlePrintEvent = (event) => {
+    if (event.keyCode === 80 && (event.ctrlKey || event.metaKey)) {
+      event.preventDefault();
+      redirectToResumePDF();
+    }
+  }
+
+  window.addEventListener('keydown', handlePrintEvent);
+  window.onbeforeprint = redirectToResumePDF;
+}
+
+function generateRandomRgbColor(color1, color2, i, start, end) {
+  return Math.floor((i / 29) * (parseInt(color2.substring(start, end), 16) - parseInt(color1.substring(start, end), 16)) + parseInt(color1.substring(start, end), 16))
+}
+
+function getRandomGradientColors(length) {
+  const color1 = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  const color2 = '#' + Math.floor(Math.random() * 16777215).toString(16);
+  const colors = [];
+
+  for (let i = 0; i < length; i++) {
+    const r = generateRandomRgbColor(color1, color2, i, 1, 3);
+    const g = generateRandomRgbColor(color1, color2, i, 3, 5);
+    const b = generateRandomRgbColor(color1, color2, i, 5, 7);
+    colors.push(`rgb(${r}, ${g}, ${b})`);
+  }
+
+  return colors;
+}
+
+function setHeroGradientListener() {
+  const h2 = document.querySelector("main #top h2");
+  const p = document.querySelector("main #top p");
+
+  [h2, p].forEach((el) => {
+    const text = el.innerText;
+    const colors = getRandomGradientColors(text.length);
+    el.innerHTML = '';
+
+    text.split('').forEach((char, i) => {
+      const span = document.createElement('span');
+      span.innerText = char;
+
+      span.addEventListener('mouseover', () => {
+        span.style.color = colors[i];
+      });
+      span.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+          span.style.color = '#fff';
+        },100)
+      });
+
+      el.appendChild(span);
+    });
+  });
+}
+
+function toggleModal(element) {
+  const existing = document.querySelector('.modal');
+
+  if (existing) {
+    const contactContainer = document.querySelector('.contact .container');
+
+    existing.remove();
+    return contactContainer.appendChild(element);
+  }
+
+  if (isSurveyTaken) return;
+    
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+
+  modal.appendChild(element);
+  document.body.appendChild(modal);
+
+  modal.style.display = 'block';
+}
+
+function setContactListener() {
+  const form = document.querySelector(".contact-form-inputs");
+
+  form.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+
+
+  })
 }
 
 setMobileMenuListener();
 addButtonToggleListeners();
 addSurveyListener();
 addNavListeners();
+setPrintListener();
+setHeroGradientListener();
+setContactListener();
 renderProjects(allProjects);
 updateArticles();
 Pong.initialize();
