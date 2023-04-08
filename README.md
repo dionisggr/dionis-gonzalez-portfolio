@@ -10,7 +10,7 @@ I also write about technologies and life when I find a chance. Step into the mat
 
 ---
 
-### 📚 Table of Contents
+## 📚 Table of Contents
 
 1. [About Me](#about-me)
 2. [Technical Skills](#technical-skills)
@@ -21,7 +21,7 @@ I also write about technologies and life when I find a chance. Step into the mat
 
 ---
 
-### 🤵 About Me
+## 🤵 About Me
 
 - 💡 I like to explore new technologies and develop interesting software solutions.
 - 🎓 Currently pursuing a Master's in Computer Science from Georgia Institute of Technology.
@@ -32,59 +32,59 @@ I also write about technologies and life when I find a chance. Step into the mat
 
 ---
 
-### 💻 Technical Skills
-1. **Frontend**:
-   - HTML 🌐
-   - CSS 🎨
-   - JavaScript ⚡
-   - jQuery 📦
-   - React ⚛️
-   - Redux 🔄
-   - Vue.js 💚
-   - Vuetify 🖌️
+## 💻 Technical Skills
+### **Frontend**
+   - HTML
+   - CSS
+   - JavaScript
+   - jQuery
+   - React
+   - Redux
+   - Vue.js
+   - Vuetify
 
-2. **Backend**:
-   - Python 🐍
-   - Node.js 🟢
-   - Express.js 🚂
-   - TypeScript 🔷
-   - Knex.js 🛠️
-   - OAuth 🗝️
-   - JWT 🔐
-   - Firebase 🔥
+### **Backend**
+   - Python
+   - Node.js
+   - Express.js
+   - TypeScript
+   - Knex.js
+   - OAuth
+   - JWT
+   - Firebase
 
-3. **Databases**:
-   - SQL/PostgreSQL 🐘
-   - BigQuery ☁️
+### **Databases**
+   - SQL/PostgreSQL
+   - BigQuery
 
-4. **Data Engineering & ETL**:
-   - Airflow 🌬️
-   - DBT 🏗️
+### **Data Engineering & ETL**
+   - Airflow
+   - DBT
 
-5. **Testing**:
-   - Jest 🃏
-   - Cypress 🌲
-   - WebDriverIO 🚗
-   - Mocha ☕
-   - Chai 🍵
-   - Supertest 🧪
-   - Enzyme ⚗️
-   - Cucumber 🥒
+### **Testing**
+   - Jest
+   - Cypress
+   - WebDriverIO
+   - Mocha
+   - Chai
+   - Supertest
+   - Enzyme
+   - Cucumber
 
-6. **CI/CD & Cloud**:
-   - CircleCI 🔄
-   - Google Cloud Platform ☁️
+### **CI/CD & Cloud**
+   - CircleCI
+   - Google Cloud Platform
 
 ---
 
-### 🌟 Featured Projects
+## 🌟 Featured Projects
 <img src="./img/flickshare.png" alt="Flickshare App" style="width: 400px; margin-top: 1rem;"/>
 
-[**FlickShare**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
+### [FlickShare](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
-##### Personalized movie suggestions based on full custom lists, not just one movie!
+&nbsp;&nbsp;&nbsp;&nbsp;Personalized movie suggestions based on full custom lists, not just one movie!
 
-Technologies used:
+**Technologies used:**
 - React
 - CSS
 - JavaScript
@@ -102,11 +102,11 @@ Technologies used:
 
 <img src="./img/langcards.png" alt="Langcards App" style="width: 400px; margin-top: 1rem;"/>
 
-[**LangCards**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
+### [LangCards](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
-##### A Spanish language trainer app that uses spaced repetition for effective learning.
+&nbsp;&nbsp;&nbsp;&nbsp;A Spanish language trainer app that uses spaced repetition for effective learning.
 
-Technologies used:
+**Technologies used:**
 - React
 - CSS
 - JavaScript
@@ -125,9 +125,9 @@ Technologies used:
 ---
 <img src="./img/tabgpt.png" alt="TabGPT App" style="width: 400px; margin-top: 1rem;"/>
 
-[**TabGPT**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
+### [TabGPT](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
-##### An AI-powered Chrome extension that answers questions from the text in active tabs.
+&nbsp;&nbsp;&nbsp;&nbsp;An AI-powered Chrome extension that answers questions from the text in active tabs.
 
 **Technologies used:**
 - HTML
@@ -138,47 +138,40 @@ Technologies used:
 
 ---
 
-### 🚧 Work Experience
-**MikMak**  
-*Software Engineer*  
-Jul 2022 - Jan 2023 · 7 mos  
+## 🚧 Work Experience
+**MikMak** 
 
-*Associate Software Engineer*  
-Apr 2021 - Jul 2022 · 1 yr 4 mos  
+&nbsp;&nbsp;&nbsp;&nbsp;*Software Engineer*  - Jul 2022 - Jan 2023
+
+&nbsp;&nbsp;&nbsp;&nbsp;*Associate Software Engineer* - Apr 2021 - Jul 2022
 
 **Hilton Hotels & Resorts**  
-*Steward Supervisor*  
-Feb 2020 - Oct 2020 · 9 mos  
+&nbsp;&nbsp;&nbsp;&nbsp;*Steward Supervisor* - Feb 2020 - Oct 2020
 
 **Zovio**  
-*Military Enrollment Advisor*  
-Apr 2020 - Sep 2020 · 6 mos  
-
-**7-Eleven**  
-*Assistant Manager*  
+&nbsp;&nbsp;&nbsp;&nbsp;*Military Enrollment Advisor* - Apr 2020 - Sep 2020
 
 **NUC University - Online Division**  
-*Admissions Officer*  
-Nov 2016 - Nov 2019 · 3 yrs 1 mo  
+&nbsp;&nbsp;&nbsp;&nbsp;*Admissions Officer* - Nov 2016 - Nov 2019
 
 ---
 
-### 🎓 Education
+## 🎓 Education
 
-1. Master's in Computer Science, Georgia Institute of Technology (in progress)
-2. Bachelor's in Network Technology and Application Development - NUC University
-3. Full-Stack Software Engineering Certificate - Thinkful
+- Master's in Computer Science, Georgia Institute of Technology (in progress)
+- Bachelor's in Network Technology and Application Development - NUC University
+- Full-Stack Software Engineering Certificate - Thinkful
 
-### 🏆 Certifications and Achievements
+## 🏆 Certifications and Achievements
 
-1. Group 2 Social / Behavioral Research Investigators and Key Personnel - CITI Program
-2. Fundamentals of Digital Marketing - Google
-3. Google My Business Basics Certification - Google
-4. Digital Sales Certification - Google
+- Group 2 Social / Behavioral Research Investigators and Key Personnel - CITI Program
+ -Fundamentals of Digital Marketing - Google
+- Google My Business Basics Certification - Google
+- Digital Sales Certification - Google
 
-### 📞 Contact Information
+## 📞 Contact Information
 
-✉️ You can shoot me an email at [dionisggr@gmail.com](mailto:dionisggr@gmail.com)! I'll try to respond as soon as I can.
+&nbsp;&nbsp;&nbsp;&nbsp;✉️ You can shoot me an email at [dionisggr@gmail.com](mailto:dionisggr@gmail.com)! I'll try to respond as soon as I can.
 - [LinkedIn](https://www.linkedin.com/in/dionis-gonzalez/)
 - [Personal Website](https://www.dioveloper.com/)
 - [My Resume](https://drive.google.com/file/d/1R5c_-jpCvC3_e1QuuR5Ph1NXcsrhzc77/view?usp=sharing)
