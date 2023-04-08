@@ -19,7 +19,7 @@ const allProjects = [
       "Vercel",
       "Heroku",
     ],
-    image: "./flickshare.png",
+    image: "../img/flickshare.png",
     url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
   },
   {
@@ -41,14 +41,14 @@ const allProjects = [
       "Vercel",
       "Heroku",
     ],
-    image: "./langcards.png",
+    image: "../img/langcards.png",
     url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
   },
   {
     title: "TabGPT",
     description: "An AI-powered Chrome extension that answer questions from the text in active tabs.",
     technologies: ["HTML", "CSS", "JavaScript", "Chrome API", "GPT"],
-    image: "./tabgpt.png",
+    image: "../img/tabgpt.png",
     url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
   },
 ];
@@ -80,7 +80,7 @@ const allArticles = [
         alt: 'JavaScript',
       },
     ],
-    image: "./developer.jpeg",
+    image: "../img/developer.jpeg",
     url: "!",
   },
   {
@@ -101,7 +101,7 @@ const allArticles = [
         alt: 'User-Centered Design',
       },
     ],
-    image: "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__480.jpg",
+    image: "../img/human-robot-hand.jpeg",
     url: "!",
   },
   {
@@ -118,7 +118,7 @@ const allArticles = [
         alt: 'GPT',
       }
     ],
-    image: "./robot.webp",
+    image: "../img/robot.webp",
     url: "!",
   },
 ];
