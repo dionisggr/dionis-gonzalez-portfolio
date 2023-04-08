@@ -78,7 +78,7 @@ I also write about technologies and life when I find a chance. Step into the mat
 ---
 
 ### 🌟 Featured Projects
-<img src="./img/flickshare.png" alt="Flickshare App" style="max-width: 300px; margin-top: 1rem;"/>
+<img src="./img/flickshare.png" alt="Flickshare App" style="width: 400px; margin-top: 1rem;"/>
 
 [**FlickShare**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
@@ -100,7 +100,7 @@ Technologies used:
 
 ---
 
-<img src="./img/langcards.png" alt="Flickshare App" style="width: 300px; margin-top: 1rem;"/>
+<img src="./img/langcards.png" alt="Langcards App" style="width: 400px; margin-top: 1rem;"/>
 
 [**LangCards**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
@@ -123,7 +123,7 @@ Technologies used:
 - Heroku
 
 ---
-<img src="./img/tabgpt.png" alt="Flickshare App" style="max-width: 300px; margin-top: 1rem;"/>
+<img src="./img/tabgpt.png" alt="TabGPT App" style="width: 400px; margin-top: 1rem;"/>
 
 [**TabGPT**](https://dionis-gonzalez-portfolio.netlify.app/pong.html)
 
