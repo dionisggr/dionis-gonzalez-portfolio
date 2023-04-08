@@ -30,6 +30,8 @@ I also write about technologies and life when I find a chance. Step into the mat
 - ✍️ In my free time, I enjoy watching anime/movies, playing some piano, and catching up on interesting trends and topics.
 - 💬 Feel free to reach out to me for any project or volunteering, even just some conversation.
 
+---
+
 ### 💻 Technical Skills
 1. **Frontend**:
    - HTML 🌐
@@ -73,6 +75,7 @@ I also write about technologies and life when I find a chance. Step into the mat
    - CircleCI 🔄
    - Google Cloud Platform ☁️
 
+---
 
 ### 🌟 Featured Projects
 <img src="./img/flickshare.png" alt="Flickshare App" style="max-width: 300px; margin-top: 1rem;"/>
@@ -133,6 +136,8 @@ Technologies used:
 - Chrome API
 - GPT
 
+---
+
 ### 🚧 Work Experience
 **MikMak**  
 *Software Engineer*  
@@ -156,6 +161,7 @@ Apr 2020 - Sep 2020 · 6 mos
 *Admissions Officer*  
 Nov 2016 - Nov 2019 · 3 yrs 1 mo  
 
+---
 
 ### 🎓 Education
 
