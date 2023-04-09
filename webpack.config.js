@@ -13,7 +13,7 @@ const stylesHandler = isProduction
 const config = {
   entry: ["./src/script.js", "./src/style.css"],
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname),
   },
   devServer: {
     open: true,
@@ -55,7 +55,7 @@ const config = {
           },
         ],
         generator: {
-          filename: "img/[name]-[hash][ext]",
+          filename: "img-prod/[name]-[hash][ext]",
         },
       },
 
