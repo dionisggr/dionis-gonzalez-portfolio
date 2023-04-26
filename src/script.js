@@ -12,7 +12,7 @@ const articles = {
   filters: [],
 };
 const badges = {
-  png: ['cypress']
+  png: ['cypress', 'passportjs', 'supabase'],
 }
 let isSurveyTaken = false;
 

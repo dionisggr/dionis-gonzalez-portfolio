@@ -1,5 +1,22 @@
 const projects = [
   {
+    title: "Baseport",
+    description: "A REST API boilerplate for Node.js projects with most common features already implemented.",
+    technologies: [
+      "JavaScript",
+      "Nodejs",
+      "Express",
+      "Knex",
+      "PostgreSQL",
+      "Passportjs",
+      "Supabase",
+      "SendGrid",
+      "SwaggerUI",
+    ],
+    image: "../src/img/flickshare.png",
+    url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
+  },
+  {
     title: "FlickShare",
     description: "Personalized movie suggestions based from full custom lists, and not just one movie!",
     technologies: [
@@ -17,28 +34,6 @@ const projects = [
       "Heroku",
     ],
     image: "../src/img/flickshare.png",
-    url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
-  },
-  {
-    title: "LangCards",
-    description: "A Spanish language trainer app that uses spaced repetition for effective learning.",
-    technologies: [
-      "React",
-      "CSS",
-      "JavaScript",
-      "Nodejs",
-      "Express",
-      "Knex",
-      "PostgreSQL",
-      "Mocha",
-      "Chai",
-      "Cypress",
-      "JWT",
-      "Helmet",
-      "Vercel",
-      "Heroku",
-    ],
-    image: "../src/img/langcards.png",
     url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
   },
   {
