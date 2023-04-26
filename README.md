@@ -1,4 +1,4 @@
-# Dionis Gonzalez - Full-Stack Software Engineer
+# Dionis Gonzalez - Software Engineer
 
 ## Welcome to my GitHub Profile! 👋
 

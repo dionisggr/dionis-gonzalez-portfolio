@@ -13,7 +13,7 @@ const projects = [
       "SendGrid",
       "SwaggerUI",
     ],
-    image: "../src/img/flickshare.png",
+    image: "../src/img/baseport.png",
     url: "https://dionis-gonzalez-portfolio.netlify.app/pong.html",
   },
   {
