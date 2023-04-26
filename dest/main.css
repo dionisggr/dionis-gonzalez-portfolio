@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
 @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
-
 /* Reset CSS */
 html,
 body,
@@ -179,7 +178,9 @@ nav.mobile {
   width: 100%;
   z-index: 2;
   transform: translate(100%, 0);
+  transition: 0.55s, opacity 0.75s, -webkit-backdrop-filter 3s;
   transition: 0.55s, opacity 0.75s, backdrop-filter 3s;
+  transition: 0.55s, opacity 0.75s, backdrop-filter 3s, -webkit-backdrop-filter 3s;
   text-align: center;
   opacity: 0;
 }
@@ -187,7 +188,8 @@ nav.mobile {
 nav.mobile.open {
   transform: translate(0, 0);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 30%, #1e1e1e 30%);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   opacity: 1;
 }
 
@@ -253,7 +255,8 @@ main #top img {
   max-height: 185px;
   width: 45vw;
   height: 45vw;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
@@ -268,6 +271,7 @@ main #top p {
 .mini-game {
   text-align: center;
   font-weight: bold;
+  height: -moz-fit-content;
   height: fit-content;
   max-width: 1600px;
   margin-top: 3rem;
@@ -423,7 +427,9 @@ main #top p {
   background-color: #222222e8;
   color: #297bd3;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  height: -moz-fit-content;
   height: fit-content;
+  min-width: -moz-fit-content;
   min-width: fit-content;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.319);
 }
@@ -534,7 +540,8 @@ main #top p {
 .projects .project img {
   width: 100%;
   height: 200px;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   margin-bottom: 1.5rem;
   border-radius: 10px;
   border: solid 1px #22222208;
@@ -595,6 +602,7 @@ main #top p {
 
 .projects .project .technologies {
   margin: 1.5rem 0 1rem 0;
+  height: -moz-fit-content;
   height: fit-content;
   min-height: 100px;
   width: 100%;
@@ -629,6 +637,7 @@ main #top p {
 
 .more-projects {
   margin: 2rem auto 5rem auto;
+  width: -moz-fit-content;
   width: fit-content;
   height: 60px;
 }
@@ -771,7 +780,8 @@ main #top p {
 .testimonials .testimonial .picture {
   height: 125px;
   width: 125px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Blog */
@@ -885,6 +895,7 @@ main #top p {
   overflow: hidden;
   position: relative;
   z-index: 0;
+  height: -moz-fit-content;
   height: fit-content;
 }
 
@@ -940,7 +951,8 @@ main #top p {
 }
 
 .blog-card .details a {
-  text-decoration: dotted underline;
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
 }
 
 .blog-card .description {
@@ -968,6 +980,7 @@ main #top p {
   font-weight: bold;
   padding: 2rem;
   padding: 0;
+  height: -moz-fit-content;
   height: fit-content;
   position: relative;
   font-size: 1.4rem;
@@ -981,6 +994,7 @@ main #top p {
   text-transform: uppercase;
   color: #a2a2a2;
   margin-top: 0.4rem;
+  height: -moz-fit-content;
   height: fit-content;
   text-align: center;
 }
@@ -1153,6 +1167,7 @@ main #top p {
   top: 40.8rem;
   left: 50%;
   transform: translateX(-50%);
+  height: -moz-fit-content;
   height: fit-content;
   border: 1px solid #22222270;
   border-radius: 25px;
@@ -1184,6 +1199,7 @@ main #top p {
   font-weight: bold;
   cursor: pointer;
   width: 120%;
+  height: -moz-fit-content;
   height: fit-content;
   margin-top: 1.25rem;
   margin-left: -10%;
@@ -1372,11 +1388,14 @@ footer .social-links img {
   header h1 {
     justify-content: flex-start;
     padding-left: 6rem;
+    width: -moz-fit-content;
     width: fit-content;
+    right: auto;
     right: initial;
   }
 
   header .last-name {
+    display: inline;
     display: initial;
   }
 
@@ -1385,6 +1404,7 @@ footer .social-links img {
   }
 
   header .me {
+    width: -moz-fit-content;
     width: fit-content;
     min-width: 300px;
   }
@@ -1501,6 +1521,7 @@ footer .social-links img {
   }
 
   nav.desktop {
+    display: inline;
     display: initial;
   }
 
@@ -1513,6 +1534,7 @@ footer .social-links img {
   }
 
   header .me {
+    width: -moz-fit-content;
     width: fit-content;
   }
 
@@ -1530,6 +1552,7 @@ footer .social-links img {
   }
 
   nav.desktop {
+    display: inline;
     display: initial;
   }
 
@@ -1557,6 +1580,7 @@ footer .social-links img {
     justify-content: center;
     width: 90%;
     max-width: initial;
+    max-height: none;
     max-height: initial;
     max-width: 1200px;
   }
