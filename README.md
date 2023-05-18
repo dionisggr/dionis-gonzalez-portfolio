@@ -6,8 +6,6 @@ Software engineer with experience in full-stack and data engineering. Passionate
 
 My career goal is to learn more about the fields of Artificial Intelligence and Human-Computer Interaction, focusing on industries such as e-commerce, education, and finance.
 
-I also write about technologies and life when I find a chance. Step into the matrix of tech with me, and decode life jargon together!
-
 ---
 
 ## 📚 Table of Contents
