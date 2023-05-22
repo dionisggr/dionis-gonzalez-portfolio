@@ -1021,17 +1021,6 @@ main #top p {
   pointer-events: none;
 }
 
-.blog-card .description .read-more a::after {
-  position: absolute;
-  right: 2vw;
-  content: "Coming Soon";
-  height: 100%;
-  background-color: #fff;
-  color: rgb(207, 0, 0);
-  font-weight: bold;
-  min-width: 125px;
-}
-
 .blog-card .description .read-more a:hover {
   text-shadow: 0 0 1px #ff4400de;
 }

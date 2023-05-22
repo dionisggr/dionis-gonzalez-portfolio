@@ -808,13 +808,13 @@ main #top p {
   color: #222;
 }
 
-.blog .js {
-  color: rgb(229, 225, 182);
+.blog .pe {
+  color: #74B8B1;
 }
 
-.blog .js:hover,
-.blog .js.active {
-  background-color: rgb(229, 225, 182);
+.blog .pe:hover,
+.blog .pe.active {
+  background-color: #74B8B1;
   color: #222;
 }
 
@@ -1007,17 +1007,6 @@ main #top p {
   pointer-events: none;
 }
 
-.blog-card .description .read-more a::after {
-  position: absolute;
-  right: 2vw;
-  content: "Coming Soon";
-  height: 100%;
-  background-color: #fff;
-  color: rgb(207, 0, 0);
-  font-weight: bold;
-  min-width: 125px;
-}
-
 .blog-card .description .read-more a:hover {
   text-shadow: 0 0 1px #ff4400de;
 }
@@ -1038,8 +1027,6 @@ main #top p {
 /* Contact Form Styles */
 .contact {
   margin: 2rem auto 0 auto;
-  /* padding-bottom: 3rem; */
-  /* padding: 3.5rem 1rem 5rem 1rem; */
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;

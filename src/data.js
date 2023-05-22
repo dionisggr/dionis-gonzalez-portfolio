@@ -46,39 +46,43 @@ const projects = [
 ];
 const articles = [
   {
-    title: "The Fast-Paced Software Engineering Journey",
-    subtitle: "MASTERING CODE & THE ART OF REFLECTION",
-    description: "In the rapidly-evolving world of software engineering, mastering code is truly just the tip of the iceberg. It quickly becomes a reflective process of welcoming mistakes in a way that encourages learning and growth, while being patient with yourself. And the connections you get to make along the way are definitely just as important as the code you write.",
+    title: "Starting a Blog in the Era of AI",
+    subtitle: "AN ODYSSEY INTO THE MATRIX",
+    description: "As the world has shifted into hyperdrive with AI, large language models, and the emergence of what I like to call the ‘GPT phenomenon’, it’s become almost a Herculean task to keep up with the sheer pace of technological advancements. It feels a bit like trying to catch a runaway train — but this train’s on an infinite loop, and we’re chasing it on foot. Well, let’s change that narrative.",
     tags: [
       {
-        src: "https://img.shields.io/badge/Software%20Engineering-4B8BBE.svg?style=flat&logoColor=white",
-        alt: "Software Engineering",
+        src: "https://img.shields.io/badge/Technology%20Trends-8E44AD.svg?style=flat",
+        alt: "Technology Trends",
       },
       {
-        src: "https://img.shields.io/badge/Networking-0078D7.svg?style=flat",
-        alt: "Networking",
+        src: "https://img.shields.io/badge/Artificial%20Intelligence-FF6F00.svg?style=flat",
+        alt: "Artificial Intelligence",
       },
     ],
-    image: "https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406__480.jpg",
-    url: "!",
+    image: "../src/img/starting-a-blog.jpeg",
+    url: "https://medium.com/@dionisggr/starting-a-blog-in-the-era-of-ai-bdf17c0160e8?source=your_stories_page-------------------------------------",
   },
   {
-    title: "Why I Like JavaScript",
-    subtitle: "BALANCED, AS ALL THINGS SHOULD BE",
-    description: "JavaScript has been a key web development language, providing quick development, full-stack capabilities, cross-platform compatibility, and a generally low learning curve. It comes with trade-offs, often noted as a reduced maintainability for larger-scale applications. But I've found its untyped and flexible nature can be advantageous when used appropriately.",
+    title: "Embracing the Future",
+    subtitle: "NAVIGATING AN ERA OF AI LANGUAGE MODELS",
+    description: "In this constantly evolving panorama of our world, technology has been a pivotal force propelling us into the future. We are living in an era characterized by unprecedented technological advancement and innovation, a time where new technologies are not only emerging but transforming the fabric of our lives, and in a very short amount of time.",
     tags: [
       {
-        src: 'https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat',
-        alt: 'JavaScript',
+        src: "https://img.shields.io/badge/Technology%20Trends-8E44AD.svg?style=flat",
+        alt: "Technology Trends",
+      },
+      {
+        src: "https://img.shields.io/badge/Artificial%20Intelligence-FF6F00.svg?style=flat",
+        alt: "Artificial Intelligence",
       },
     ],
-    image: "../src/img/developer.jpeg",
-    url: "!",
+    image: "../src/img/embracing-the-future.jpeg",
+    url: "https://medium.com/@dionisggr/embracing-the-future-724916203001?source=your_stories_page-------------------------------------",
   },
   {
-    title: "Human-Computer Interaction",
-    subtitle: "TECHNOLOGY FOR HUMANS, NOT ROBOTS",
-    description: "The field of HCI has become an increasingly interesting topic these days, and for good reason! We rely on our computers for everything, from work to entertainment, and it's safe to say they're not going away anytime soon. So what is this field about? What is user-centered design, and what should these mean to you?",
+    title: "Beyond the Interface",
+    subtitle: "UNDERSTANDING MEANINGFUL USER EXPERIENCES",
+    description: "One of the biggest mistakes designers make when designing interfaces is that they often rush straight to the prototype (or drawing board), sketching out how the buttons and screens will look, without first understanding the task and, more importantly, their users better. Think about it, it’s like trying to solve a jigsaw puzzle without having seen the picture on the box, or knowing it’s context.",
     tags: [
       {
         src: 'https://img.shields.io/badge/HCI-663399.svg?style=flat',
@@ -93,13 +97,13 @@ const articles = [
         alt: 'User-Centered Design',
       },
     ],
-    image: "../src/img/human-robot-hand.jpeg",
-    url: "!",
+    image: "../src/img/beyond-the-interface.jpeg",
+    url: "https://medium.com/@dionisggr/beyond-the-interface-8ee7e68f9433?source=your_stories_page-------------------------------------",
   },
   {
-    title: "ChatGPT: A Phenomenom",
-    subtitle: "ENGLISH, THE HOTTEST NEW LANGUAGE",
-    description: "Just a few years ago, learning to code was considered an essential skill to harness the power of technology. Now the advent of powerful AI language models like GPT have begun to revolutionize our problem-solving approaches. The need for specialized coding languages may just begin to fade, albeit slowly, but making it easier for more non-technical roles to participate in the development process.",
+    title: "A Hitchhiker’s Guide to ChatGPT",
+    subtitle: "UNDERSTANDING AI'S TALKATIVE COUSIN",
+    description: "Have you ever wished you had a buddy who could straight up answer your deepest, most random questions at the right time, or make up a captivating story on the spot, maybe even simply keep you company during an insomnia-ridden night? Well, in comes ChatGPT, the charismatic AI that’s been taking the digital world by storm. It’s like the Siri of texting, but with the verve of Shakespeare and the knowledge of a trivia champion.",
     tags: [
       {
         src: 'https://img.shields.io/badge/Artificial_Intelligence-FF6F00.svg?style=flat&logoColor=white',
@@ -108,10 +112,27 @@ const articles = [
       {
         src: 'https://img.shields.io/badge/GPT-1F1F1F.svg?style=flat',
         alt: 'GPT',
-      }
+      },
     ],
     image: "../src/img/robot.webp",
-    url: "!",
+    url: "https://medium.com/@dionisggr/a-hitchhikers-guide-to-chatgpt-19e5f4c0be6a?source=your_stories_page-------------------------------------",
+  },
+  {
+    title: "The Art of Prompt Engineering",
+    subtitle: "HOW TO TALK TO CHATGPT AND GET IT RIGHT EVERYTIME",
+    description: "In the ever-evolving orchestra of our digital reality, OpenAI’s ChatGPT has truly stolen the limelight, painting the canvas of our daily lives with its whimsical and almost magical conversational capabilities. It’s answered our midnight existential queries, gracefully composed our overflowing inbox, and even narrated bedtime stories in the velvety voice of prose. Yet, the true secret sauce to unlocking its full potential doesn’t really lie in ‘how it works’, but rather in ‘how you work it’.",
+    tags: [
+      {
+        src: 'https://img.shields.io/badge/GPT-1F1F1F.svg?style=flat',
+        alt: 'GPT',
+      },
+      {
+        src: 'https://img.shields.io/badge/Prompt_Engineering-74B8B1.svg?style=flat',
+        alt: 'Prompt Engineering',
+      }
+    ],
+    image: "../src/img/art-of-prompt-engineering.jpeg",
+    url: "https://medium.com/@dionisggr/the-art-of-prompt-engineering-aa07d8c787ca?source=your_stories_page-------------------------------------",
   },
 ];
 

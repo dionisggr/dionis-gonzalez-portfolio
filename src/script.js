@@ -98,10 +98,8 @@ function updateArticles() {
     });
   }
 
-
-
   articles.filtered.forEach(({ title, subtitle, description, tags, image, url }, i) => {
-    const blogCard = document.createElement("div");
+    const blogCard = document.createElement("a");
     const metaDiv = document.createElement("div");
     const photoDiv = document.createElement("div");
     const descriptionDiv = document.createElement("div");
@@ -120,6 +118,8 @@ function updateArticles() {
     });
 
     blogCard.classList.add("blog-card");
+    blogCard.href = url;
+    blogCard.target="_blank"
     metaDiv.classList.add("meta");
     photoDiv.classList.add("photo");
     descriptionDiv.classList.add("description");
