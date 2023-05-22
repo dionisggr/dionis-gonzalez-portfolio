@@ -818,13 +818,13 @@ main #top p {
   color: #222;
 }
 
-.blog .js {
-  color: rgb(229, 225, 182);
+.blog .pe {
+  color: #74B8B1;
 }
 
-.blog .js:hover,
-.blog .js.active {
-  background-color: rgb(229, 225, 182);
+.blog .pe:hover,
+.blog .pe.active {
+  background-color: #74B8B1;
   color: #222;
 }
 
@@ -1041,8 +1041,6 @@ main #top p {
 /* Contact Form Styles */
 .contact {
   margin: 2rem auto 0 auto;
-  /* padding-bottom: 3rem; */
-  /* padding: 3.5rem 1rem 5rem 1rem; */
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
