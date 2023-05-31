@@ -466,6 +466,12 @@ main #top p {
   background-color: #d6ede4e6;
 }
 
+.medium-logo {
+  min-height: 30px;
+  min-width: 35px;
+  padding-top: 4px;
+}
+
 
 /* Projects section styles */
 .projects {
