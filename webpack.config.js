@@ -13,7 +13,7 @@ const stylesHandler = isProduction
 const config = {
   entry: ["./src/script.js", "./src/style.css"],
   output: {
-    path: path.resolve(__dirname, 'dest'),
+    path: path.resolve(__dirname),
   },
   devServer: {
     open: true,
