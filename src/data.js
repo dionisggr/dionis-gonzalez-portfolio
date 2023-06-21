@@ -36,7 +36,7 @@ const projects = [
       "SwaggerUI",
     ],
     image: "../src/img/multiserve.png",
-    url: "https://baseport.up.railway.app/docs",
+    url: "https://multiserve.up.railway.app/docs",
   },
   {
     title: "SignPost",
@@ -54,7 +54,7 @@ const projects = [
       "GPT",
     ],
     image: "../src/img/signpost.png",
-    url: "https://baseport.up.railway.app/docs",
+    url: "https://github.com/dionisggr/signpost",
   },
   {
     title: "ChatterAI",

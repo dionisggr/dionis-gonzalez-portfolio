@@ -277,13 +277,13 @@ function addNavListeners() {
       const section = document.querySelector(sectionId);
       const offset = event.target != headerLogo ? section.offsetTop - 70 : 0;
 
-      mobileNav.classList.toggle("open");
       window.scrollTo(0, offset);
     });
   });
 
-  mobileNav.addEventListener("click", ({ target }) => {
-    if (target == mobileNav) {
+  mobileNav.addEventListener("click", (evt) => {
+    console.log(evt.target)
+    if (mobileNav.contains(evt.target)) {
       mobileNav.classList.remove("open");
     }
   })
