@@ -574,9 +574,10 @@ main #top p {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   position: relative;
   z-index: 2;
+  cursor: pointer;
 }
 
-.projects .project a::after {
+.projects .project a.coming-soon::after {
   display: flex;
   align-items: center;
   justify-content: center;

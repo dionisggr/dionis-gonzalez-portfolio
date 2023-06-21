@@ -12,7 +12,7 @@ const articles = {
   filters: [],
 };
 const badges = {
-  png: ['cypress', 'passportjs', 'supabase'],
+  png: ['cypress', 'passportjs', 'supabase', 'vuex'],
 }
 let isSurveyTaken = false;
 
@@ -153,13 +153,15 @@ function addProjectTechnologies(technologies, el) {
   el.classList.add("technologies");
 
   technologies.forEach((tech) => {
-    tech = tech.toLowerCase().split(" ")[0];
+    const techLowercase = tech.toLowerCase()
+      .replace('.', '').split(' ')[0];
 
     const img = document.createElement("img");
-    const ext = badges.png.includes(tech) ? "png" : "svg";
+    const ext = badges.png.includes(techLowercase) ? "png" : "svg";
 
-    img.src = `../src/img/icons/${tech}.${ext}`;
+    img.src = `../src/img/icons/${techLowercase}.${ext}`;
     img.alt = `${tech} logo`;
+    img.title = tech;
 
     img.classList.add("tech-badge");
     el.appendChild(img);
@@ -167,6 +169,7 @@ function addProjectTechnologies(technologies, el) {
 
   return el;
 }
+
 
 function renderProjects(list) {
   projectListSection.innerHTML = "";
@@ -189,7 +192,12 @@ function renderProjects(list) {
     h3.innerText = project.title;
     p.innerText = project.description;
     a.textContent = "View Project";
-    // a.href = project.url;
+    a.href = project.url;
+    a.target = "_blank";
+
+    if (project.comingSoon) {
+      a.classList.add("coming-soon");
+    }
 
     children.forEach((child) => div.appendChild(child));
     projectListSection.appendChild(div);
