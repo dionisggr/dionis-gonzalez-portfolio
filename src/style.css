@@ -546,6 +546,10 @@ main #top p {
   border: solid 1px #22222208;
 }
 
+.projects .project .project-image {
+  object-fit: cover;
+}
+
 .projects .project h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;

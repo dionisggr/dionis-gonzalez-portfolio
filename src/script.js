@@ -187,8 +187,9 @@ function renderProjects(list) {
 
     div.classList.add("project", project.title.toLowerCase());
 
+    img.classList.add("project-image");
     img.src = project.image;
-    img.alt = project.alt;
+    img.alt = project.title;
     h3.innerText = project.title;
     p.innerText = project.description;
     a.textContent = "View Project";
@@ -282,7 +283,6 @@ function addNavListeners() {
   });
 
   mobileNav.addEventListener("click", (evt) => {
-    console.log(evt.target)
     if (mobileNav.contains(evt.target)) {
       mobileNav.classList.remove("open");
     }
@@ -366,7 +366,6 @@ function setHeroGradientListener() {
 }
 
 function toggleModal(element) {
-  console.log('runs')
   const existing = document.querySelector('.modal');
 
   if (existing) {
