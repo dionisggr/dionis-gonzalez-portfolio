@@ -223,7 +223,7 @@ function addSurveyListener() {
       h4.innerText = 'Thanks for participating!';
     }
 
-    if (navigator.userAgentData.mobile || window.innerWidth < 865) {
+    if (navigator?.userAgentData?.mobile || window.innerWidth < 865) {
       survey.classList.toggle('mobile');
       toggleModal(survey);
     }
