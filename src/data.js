@@ -1,7 +1,7 @@
 const projects = [
   {
     title: "PromptWiz",
-    description: "A web tool built in Vue 3 for enhancing ChatGPT prompts, guiding it in providing higher quality and more contextually accurate responses.",
+    description: "A web tool for enhancing ChatGPT and DALL-E prompts, guiding them in providing higher quality and more contextually accurate responses.",
     technologies: [
       "Vue.js",
       "TailwindCSS",
@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "ChatterAI",
-    description: "A group chat application for leveraging ChatGPT, DALLE and Whisper models in conversations, or to discuss topics and projects.",
+    description: "A group chat application that leverages ChatGPT and DALLE models in conversations, as another participant, for helpful discussions and tasks.",
     technologies: [
       "React.js",
       "TailwindCSS",

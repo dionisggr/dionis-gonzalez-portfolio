@@ -560,9 +560,9 @@ main #top p {
   text-align: center;
   padding: 0 0.25rem;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  font-size: 0.95rem;
 }
 
 .projects .project a {
