@@ -45,7 +45,7 @@ const projects = [
   },
   {
     title: "MultiServe",
-    description: "My personal REST API server for Node.js projects cloned from my SignPost boilerplate.",
+    description: "My personal REST API server for Node.js projects cloned from my PostSign boilerplate.",
     technologies: [
       "JavaScript",
       "Nodejs",
@@ -61,7 +61,7 @@ const projects = [
     url: "https://multiserve.up.railway.app/docs",
   },
   {
-    title: "SignPost",
+    title: "PostSign",
     description: "A REST API boilerplate for Node.js projects with the most common features already implemented.",
     technologies: [
       "JavaScript",
@@ -75,8 +75,8 @@ const projects = [
       "SwaggerUI",
       "GPT",
     ],
-    image: "../src/img/signpost.png",
-    url: "https://github.com/dionisggr/signpost",
+    image: "../src/img/postsign.png",
+    url: "https://github.com/dionisggr/postsign",
   },
   {
     title: "FlickShare",
