@@ -57,6 +57,21 @@ const projects = [
     url: "https://affluent-six.vercel.app",
   },
   {
+    title: "PromptGarage",
+    description: "ChatGPT prompt enhancer, evaluator and builder.",
+    technologies: [
+      "Vue.js",
+      "TailwindCSS",
+      "Vite",
+      "Vuex",
+      "JavaScript",
+      "GPT",
+      "Vercel",
+    ],
+    image: "../src/img/promptgarage.png",
+    url: "https://promptgarage.vercel.app",
+  },
+  {
     title: "MultiServe",
     description: "REST API used for all personal projects",
     technologies: [
