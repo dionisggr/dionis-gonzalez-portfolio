@@ -17,8 +17,8 @@ const projects = [
       "Vercel",
       "Supabase",
     ],
-    image: "../src/img/skillclimb.png",
-    url: "https://skillclimb.vercel.app/",
+    image: "../src/img/tutorize_banner.png",
+    url: "https://tutorize.vercel.app/",
   },
   {
     title: "PixelHaus",
