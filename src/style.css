@@ -79,7 +79,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
+  padding: 1rem;
+  padding-left: 1.5rem;
   background-color: #222;
   padding-right: 2rem;
   min-height: 80px;
@@ -93,7 +94,7 @@ header h1 {
   align-items: center;
   font-family: "Inconsolata", monospace;
   font-weight: bold;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   margin: auto;
   color: #fff;
   pointer-events: none;
@@ -156,8 +157,7 @@ nav li {
 }
 
 nav a {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.916);
 }
@@ -316,7 +316,7 @@ main #top p {
 
 .about-me p,
 .collaboration p {
-  max-width: 850px;
+  max-width: 900px;
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -365,7 +365,7 @@ main #top p {
 }
 
 .skills .description {
-  min-height: 100px;
+  min-height: 75px;
 }
 
 .skills p:first-of-type {
@@ -373,12 +373,7 @@ main #top p {
 }
 
 .skills p:nth-of-type(2) {
-  font-style: italic;
   margin-bottom: 1rem;
-}
-
-.skills p:last-of-type {
-  font-weight: bold;
 }
 
 .skills h4 {
@@ -791,6 +786,10 @@ main #top p {
   margin: 0 auto;
   padding: 0 1rem;
   margin-top: 4.5rem;
+}
+
+.blog h3 {
+  font-size: 1.5rem;
 }
 
 .blog h4 {
@@ -1312,7 +1311,6 @@ footer .quote span {
 footer .created-by {
   margin-bottom: 0;
   text-align: center;
-  font-size: 3.5vw;
   font-size: 0.75rem;
 }
 
@@ -1486,10 +1484,6 @@ footer .social-links img {
 
   .contact .contact-form-inputs {
     margin-left: 1rem;
-  }
-
-  footer .quote {
-    font-size: 1.10rem;
   }
 }
 

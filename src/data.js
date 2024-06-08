@@ -1,7 +1,7 @@
 const projects = [
   {
-    title: "SkillClimb",
-    description: "AI-enhanced online course platform",
+    title: "Tutorize.AI",
+    description: "AI-powered tutoring platform that personalizes video course content to students.",
     technologies: [
       "Vue.js",
       "TailwindCSS",
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "PixelHaus",
-    description: "Online renting platform for AI-generated wall art",
+    description: "Online renting platform for the niche of AI-generated wall art",
     technologies: [
       "Vue.js",
       "TailwindCSS",
@@ -36,29 +36,8 @@ const projects = [
     url: "https://pixelhaus.vercel.app",
   },
   {
-    title: "Affluent",
-    description: "AI-powered personal finance health app with prediction modeling",
-    technologies: [
-      "Vue.js",
-      "TailwindCSS",
-      "Vite",
-      "Vuex",
-      "JavaScript",
-      "GPT",
-      "Nodejs",
-      "Express",
-      "Knex",
-      "PostgreSQL",
-      "JWT",
-      "Vercel",
-      "Supabase",
-    ],
-    image: "../src/img/affluent.png",
-    url: "https://affluent-six.vercel.app",
-  },
-  {
     title: "PromptGarage",
-    description: "ChatGPT prompt enhancer, evaluator and builder.",
+    description: "GPT prompt enhancer, evaluator and builder.",
     technologies: [
       "Vue.js",
       "TailwindCSS",
@@ -70,44 +49,6 @@ const projects = [
     ],
     image: "../src/img/promptgarage.png",
     url: "https://promptgarage.vercel.app",
-  },
-  {
-    title: "MultiServe",
-    description: "REST API used for all personal projects",
-    technologies: [
-      "JavaScript",
-      "Nodejs",
-      "Express",
-      "Knex",
-      "PostgreSQL",
-      "JWT",
-      "Supabase",
-      "Mailgun",
-      "SwaggerUI",
-    ],
-    image: "../src/img/multiserve.png",
-    url: "https://multiserve.up.railway.app/docs",
-  },
-  {
-    title: "FlickShare",
-    description: "Personalized movie recommendations from custom lists, not just single films",
-    technologies: [
-      "React.js",
-      "TailwindCSS",
-      "JavaScript",
-      "Nodejs",
-      "Express",
-      "Knex",
-      "PostgreSQL",
-      "Mocha",
-      "Chai",
-      "JWT",
-      "Vercel",
-      "Supabase",
-    ],
-    image: "../src/img/flickshare.png",
-    url: "https://flickshare-client.vercel.app/",
-    comingSoon: true,
   },
 ];
 const articles = [
