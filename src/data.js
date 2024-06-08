@@ -1,7 +1,7 @@
 const projects = [
   {
-    title: "Tutorize.AI",
-    description: "AI-powered tutoring platform that personalizes video course content to students.",
+    title: "Tutorize",
+    description: "AI-powered tutoring platform that personalizes video course content to learners.",
     technologies: [
       "Vue.js",
       "TailwindCSS",
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "PromptGarage",
-    description: "GPT prompt enhancer, evaluator and builder.",
+    description: "Web-based GPT prompt enhancer, evaluator and builder.",
     technologies: [
       "Vue.js",
       "TailwindCSS",
