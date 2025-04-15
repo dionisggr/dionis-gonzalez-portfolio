@@ -682,7 +682,7 @@ main #top p {
   
   .recent-work-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -706,7 +706,7 @@ main #top p {
   }
   
   .recent-work-card img {
-    width: 100%;
+    width: 100%;               /* Corrected width: 100% for proper scaling */
     height: 220px;
     object-fit: cover;
   }
@@ -782,6 +782,14 @@ main #top p {
     vertical-align: top;
     margin-right: 0.5rem;
   }
+  
+  /* Mobile adjustments: force a single column on narrow screens */
+  @media (max-width: 480px) {
+    .recent-work-container {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+}
   
 
 .collaboration {
