@@ -32,8 +32,7 @@
         <ul>
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#recent-work">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -51,8 +50,7 @@
         <ul class="nav-list">
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
+          <li><a href="#recent-work">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -61,13 +59,8 @@
       <section id="top">
         <h2>Full-Stack / Data Engineer <span class="role-divider"></h2>
         <p>I enjoy solving problems with clever solutions.</p>
-        <img src="img/dionis-gonzalez.jpeg" alt="profile picture" />
+        <img src="img/dionis-gonzalez.png" alt="profile picture" />
       </section>
-      <div class="mini-game">
-        <h4>Play some pong!</h4>
-        <p>(Press "Enter" to Start/Stop)</p>
-        <canvas class="pong"></canvas>
-      </div>
       <section id="about-me" class="about-me">
         <p class="title">
           Hey, I&rsquo;m Dio. <br class="intro-divider" /> Welcome to my little digital world.
@@ -84,181 +77,99 @@
         </p>
       </section>
       <section id="skills" class="skills">
-        <div class="skill front-end">
-          <img src="img/icons/front-end.png" alt="" class="front-end-logo" />
-          <h4>Front-End</h4>
-          <p class="description">
-            I appreciate clean design, often coding
-            from scratch and bringing ideas to life.
-          </p>
+        <div class="skill languages-skill">
+          <img src="img/icons/front-end.png" alt="Languages" class="languages-logo" />
+          <h4>Languages</h4>
           <ul class="languages">
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>Vue.js</li>
-            <li>React</li>
-            <li>jQuery</li>
-            <li>HTML/CSS</li>
-            <li>TailwindCSS</li>
-          </ul>
-        </div>
-        <div class="skill back-end">
-          <img src="img/icons/back-end.png" alt="" class="back-end-logo" />
-          <h4>Back-End</h4>
-          <p class="description">
-            I enjoy creating robust and scalable solutions that
-            can handle high volumes of data and traffic.
-          </p>
-          <ul class="languages">
-            <li>Python</li>
             <li>Java</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>JavaScript</li>
             <li>PostgreSQL</li>
-            <li>JWT</li>
-            <li>OAuth</li>
+            <li>SQLite</li>
+            <li>Bash</li>
           </ul>
         </div>
-        <div class="skill data-testing">
-          <img src="img/icons/tools.png" alt="" class="data-testing-logo" />
-          <h4>Data / Testing</h4>
-          <p class="description">
-            I prioritize thorough testing with proficiency in a range of
-            development tools/platforms.
-          </p>
+      
+        <div class="skill frameworks-libraries-skill">
+          <img src="img/icons/back-end.png" alt="Frameworks & Libraries" class="frameworks-logo" />
+          <h4>Frameworks & Libraries</h4>
           <ul class="languages">
-            <li>Google Cloud Platform</li>
-            <li>BigQuery</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Vue.js</li>
+            <li>Next.js</li>
+            <li>.NET</li>
+            <li>Spring Boot</li>
+          </ul>
+        </div>
+      
+        <div class="skill platforms-tools-skill">
+          <img src="img/icons/tools.png" alt="Platforms & Tools" class="platforms-logo" />
+          <h4>Platforms & Tools</h4>
+          <ul class="languages">
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>GCP</li>
             <li>Firebase</li>
-            <li>CircleCI</li>
-            <li>Apache Airflow</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>BigQuery</li>
+            <li>Airflow</li>
             <li>DBT</li>
-            <li>Jest</li>
-            <li>Cypress</li>
-            <li>Selenium</li>
-            <li>Mocha/Chai</li>
-            <li>Supertest</li>
-            <li>Enzyme</li>
-            <li>WebDriverIO</li>
-            <li>Cucumber</li>
           </ul>
         </div>
       </section>
+      
 
-      <section id="projects" class="projects">
-        <h3>My Recent Work</h3>
-        <h4>
-          Here are a few past projects I&rsquo;ve worked on. For more stuff, 
-          <a href="mailto:dionisggr@gmail.com" target="_blank" class="email-me"
-            >email me!</a
-          >
-        </h4>
-        <div class="filter-bar">
-          <button class="front-end">Vue.js</button>
-          <button class="front-end">TailwindCSS</button>
-          <button class="front-end">JavaScript</button>
-          <button class="back-end">Python</button>
-          <button class="front-end">React</button>
-          <button class="back-end">Node.js</button>
-          <button class="back-end">PostgreSQL</button>
-          <button class="back-end">Knex.js</button>
-          <button class="back-end">JWT</button>
-          <button class="others">Google Cloud Platform</button>
-          <button class="others">Supabase</button>
-          <button class="others">LLM / GPT</button>
-        </div>
-        <div class="project-list"></div>
-        <a
-          href="https://github.com/dionisggr?tab=repositories"
-          target="_blank"
-          alt="See more projects on GitHub"
-          class="more-projects"
-        >
-          <img src="img/icons/github.svg" alt="GitHub Logo" class="light"/>
-          <img src="img/icons/github.png" alt="GitHub Logo" class="dark"/>
-          Explore GitHub
-        </a>
-      </section>
-      <section id="collaboration" class="collaboration">
-        <h3 class="title">Interested in collaborating with me?</h3>
-        <p>
-          I&rsquo;m always open to discussing product development work or
-          partnership opportunities.
-        </p>
-        <button class="conversation-btn"><a href="#contact">Let's Chat!</a></button>
-      </section>
-      <section id="testimonials" class="testimonials">
-        <h3>What Others Think</h3>
-        <h4>Some kind words from people I&rsquo;ve worked with...</h4>
-        <div class="testimonial-list">
-          <a
-            href="https://www.linkedin.com/in/douglasede-webdev"
-            target="_blank"
-            alt="Douglas Ede LinkedIn"
-            class="testimonial"
-          >
-            <img class="picture" src="img/doug.png" alt="Profile picture" />
-            <h3 class="name">Douglas Ede</h3>
-            <h4 class="title">Production Manager</h4>
-            <h5 class="company">Valley Prescast, Inc.</h5>
-            <p class="review">
-              "A remarkable attention to detail and understanding of business objectives and direction. Most recommended."
-            </p>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/lilifuentes"
-            target="_blank"
-            alt="Lili Fuentes LinkedIn"
-            class="testimonial"
-          >
-            <img class="picture" src="img/lili.jpeg" alt="Profile picture" />
-            <h3 class="name">Lili Fuentes</h3>
-            <h4 class="title">Software Engineer</h4>
-            <h5 class="company">The Motley Fool</h5>
-            <p class="review">
-              "I always enjoy working with Dio. He has a contagious passion and dedication on anything he works on."
-            </p>
-          </a>
-          <a
-            href="https://uk.linkedin.com/in/mariusbanea"
-            target="_blank"
-            alt="Marius Banea LinkedIn"
-            class="testimonial"
-          >
-            <img class="picture" src="img/marius.jpeg" alt="Profile picture" />
-            <h3 class="name">Marius Banea</h3>
-            <h4 class="title">Senior Developer | Mentor</h4>
-            <h5 class="company">Hansen Technologies</h5>
-            <p class="review">
-              "I would recommend him to any potential employer, as a
-              hard-working and fast-learning IT professional."
-            </p>
-          </a>
+      <section id="recent-work" class="recent-work-section">
+        <h2>Hobby Projects</h2>
+        <div class="recent-work-container">
+          <!-- Project 1 -->
+          <div class="recent-work-card">
+            <img src="https://picsum.photos/400/200" alt="Project 1" />
+            <div class="recent-work-content">
+              <h3>ChatFlow AI</h3>
+              <p class="recent-work-desc">A conversational AI platform automating efficient customer interactions.</p>
+              <p class="recent-work-tech">React • Node.js • GPT • AWS</p>
+              <div class="recent-work-links">
+                <a href="#" class="recent-work-btn">View Project</a>
+                <a href="#" class="recent-work-btn github">GitHub</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="recent-work-card">
+            <img src="https://picsum.photos/400/200" alt="Project 2" />
+            <div class="recent-work-content">
+              <h3>FitTracker</h3>
+              <p class="recent-work-desc">An intuitive fitness tracking app for workouts, diet, and goals.</p>
+              <p class="recent-work-tech">Vue.js • Firebase • TailwindCSS</p>
+              <div class="recent-work-links">
+                <a href="#" class="recent-work-btn">View Project</a>
+                <a href="#" class="recent-work-btn github">GitHub</a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="recent-work-card">
+            <img src="https://picsum.photos/400/200" alt="Project 3" />
+            <div class="recent-work-content">
+              <h3>EcoShop</h3>
+              <p class="recent-work-desc">E-commerce platform featuring sustainable and eco-friendly products.</p>
+              <p class="recent-work-tech">Next.js • Shopify API • GraphQL</p>
+              <div class="recent-work-links">
+                <a href="#" class="recent-work-btn">View Project</a>
+                <a href="#" class="recent-work-btn github">GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section id="blog" class="blog">
-        <h3>Blog</h3>
-        <h4>
-          I also write about technologies and life when I find a chance. <br />
-          Step into the matrix of tech with me, and help me decode life jargon!
-        </h4>
-        <div class="filter-bar">
-          <button class="hci">Human-Computer Interaction</button>
-          <button class="ai">Artificial Intelligence</button>
-          <button class="pe">Prompt Engineering</button>
-          <button class="ux">UI / UX</button>
-          <button class="gpt">LLM / GPT</button>
-        </div>
-        <div class="blog-list"></div>
-        <a
-        href="https://medium.com/@dionisggr"
-        target="_blank"
-        alt="See more blog articles on Medium.com"
-        class="more-projects more-blog"
-      >
-        <img src="img/icons/medium-logo.png" alt="Medium.com Logo" class="medium-logo"/>
-        See more on Medium
-      </a>
-      </section>
+      
+
       <section id="contact" class="contact">
         <div class="title-container">
           <h3
@@ -316,105 +227,6 @@
               >
             </p> 
           </div>
-          <section class="survey">
-            <p class="close hide">&times;</p>
-            <h4>Take my mini-survey!</h4>
-            <div class="survey-content hide">
-              <form>
-                <fieldset>
-                  <legend>If you could choose one superpower:</legend>
-                  <label
-                    for="superpower1"
-                    ><input
-                      type="radio"
-                      name="entry.669368945"
-                      value="Time travel"
-                      id="superpower1"
-                      required
-                    />
-                    Time travel</label
-                  >
-                  <label
-                    for="superpower2"
-                    ><input
-                      type="radio"
-                      name="entry.669368945"
-                      id="superpower2"
-                      value="Teleportation"
-                      required
-                    />
-                    Teleportation</label
-                  >
-                </fieldset>
-                <fieldset>
-                  <legend>What's more important to you?</legend>
-                  <label
-                    for="importance1"
-                    ><input
-                      type="radio"
-                      name="entry.842141453"
-                      value="The journey"
-                      id="importance1"
-                      required
-                    />
-                    The journey</label
-                  >
-                  <label
-                    for="importance2"
-                    ><input
-                      type="radio"
-                      name="entry.842141453"
-                      value="The destination"
-                      id="importance2"
-                      required
-                    />
-                    The destination</label
-                  >
-                </fieldset>
-                <fieldset>
-                  <legend>
-                    In your opinion, which factor has a greater influence on
-                    human progress?
-                  </legend>
-                  <label
-                    for="influence1"
-                    ><input
-                      type="radio"
-                      name="entry.1241803994"
-                      value="Social change"
-                      id="influence1"
-                      required
-                    />
-                    Social change</label
-                  >
-                  <label
-                    for="influence2"
-                    ><input
-                      type="radio"
-                      name="entry.1241803994"
-                      value="Tech innovation"
-                      id="influence2"
-                      required
-                    />
-                    Tech innovation</label
-                  >
-                </fieldset>
-                <button type="submit">Submit</button>
-              </form>
-            </div>
-            <section class="post-survey error hide">
-              <p class="close hide">&times;</p>
-              <h4>Sorry, something went wrong.</h4>
-              <p class="survey-error-content">
-                Try again later, or contact me if it persists.
-              </p>
-            </section>
-            <section class="post-survey success hide">
-              <p class="close hide">&times;</p>
-              <h4>You're awesome!</h4>
-              <p>Thanks for participating.</p>
-            </section>
-          </section>
         </div>
       </section>
     </main>
@@ -434,10 +246,9 @@
           <img src="img/icons/cv.svg"></img>
         </a>
       </div>
-      <p class="created-by">Copyright © 2024. Dionis Gonzalez.<br class="long-divider"/> All rights reserved.</p>
+      <p class="created-by">Copyright © 2025. Dionis Gonzalez.<br class="long-divider"/> All rights reserved.</p>
     </footer>
     
-    <script src="pong.js" type="module"></script>
     <script src="script.js" type="module"></script>
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
   </body>

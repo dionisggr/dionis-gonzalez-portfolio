@@ -237,6 +237,7 @@ main #top {
   align-items: center;
   height: 100vh;
   padding: 0 2rem;
+  /* background-color: #222; */
   background-color: #222;
   color: #fff;
   text-align: center;
@@ -254,6 +255,7 @@ main #top img {
   width: 45vw;
   height: 45vw;
   object-fit: cover;
+  object-position: 50% 25%;
   border-radius: 50%;
   margin-bottom: 2rem;
 }
@@ -664,6 +666,99 @@ main #top p {
 .more-projects:hover .light {
   display: none;
 }
+
+.recent-work-section {
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+  }
+  
+  .recent-work-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  .recent-work-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .recent-work-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recent-work-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+  }
+  
+  .recent-work-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .recent-work-content {
+    padding: 1.5rem;
+  }
+  
+  .recent-work-card h3 {
+    font-size: 1.6rem;
+    color: #222;
+    margin-bottom: 0.75rem;
+  }
+  
+  .recent-work-desc {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+  }
+  
+  .recent-work-tech {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+  
+  .recent-work-links {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+  .recent-work-btn {
+    background-color: #0077ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recent-work-btn:hover {
+    background-color: #005fcc;
+  }
+  
+  .recent-work-btn.github {
+    background-color: #444;
+  }
+  
+  .recent-work-btn.github:hover {
+    background-color: #222;
+  }
+  
 
 .collaboration {
   display: flex;
@@ -1143,6 +1238,10 @@ main #top p {
 .contact .contact-form-inputs button:hover {
   background-color: #ffffff;
   color: #007bff;
+}
+
+.languages {
+    margin-top: 2rem;
 }
 
 .survey {
