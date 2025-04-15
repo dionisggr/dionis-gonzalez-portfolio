@@ -318,7 +318,7 @@ main #top p {
 
 .about-me p,
 .collaboration p {
-  max-width: 900px;
+  max-width: 700px;
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -686,19 +686,23 @@ main #top p {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    grid-auto-rows: 1fr; /* Ensure all grid items have the same height */
   }
   
   .recent-work-card {
     background-color: #ffffff;
     border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;              /* Make card fill the grid cell height */
+    display: flex;             /* Use flex layout for vertical alignment */
+    flex-direction: column;    /* Stack contents vertically */
   }
   
   .recent-work-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
   }
   
   .recent-work-card img {
@@ -709,6 +713,9 @@ main #top p {
   
   .recent-work-content {
     padding: 1.5rem;
+    display: flex;             /* Enable flex layout for inner content */
+    flex-direction: column;    /* Stack text and links vertically */
+    flex: 1;                   /* Allow this section to grow and fill available space */
   }
   
   .recent-work-card h3 {
@@ -734,6 +741,7 @@ main #top p {
   .recent-work-links {
     display: flex;
     gap: 0.75rem;
+    margin-top: auto;          /* Push the links to the bottom of the content area */
   }
   
   .recent-work-btn {
@@ -745,6 +753,9 @@ main #top p {
     font-size: 0.9rem;
     font-weight: 600;
     transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 125px;
   }
   
   .recent-work-btn:hover {
@@ -753,10 +764,23 @@ main #top p {
   
   .recent-work-btn.github {
     background-color: #444;
+    width: auto;
+  }
+  
+  .recent-work-btn.github.extended {
+    width: 100%;
+    max-width: 130px;
   }
   
   .recent-work-btn.github:hover {
     background-color: #222;
+  }
+  
+  .recent-work-btn.github img.github-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+    margin-right: 0.5rem;
   }
   
 
