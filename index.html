@@ -210,39 +210,44 @@
         </div>
     </div>
 
-    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold font-mono tracking-tighter hover:text-primary transition-colors">
-                <span class="text-primary">&lt;</span>dio<span class="text-accent">veloper</span><span
-                    class="text-primary">&gt;</span>
-            </a>
+<nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#" class="text-2xl font-bold font-mono tracking-tighter hover:text-primary transition-colors">
+      <span class="text-primary">&lt;</span>dio<span class="text-accent">veloper</span><span class="text-primary">&gt;</span>
+    </a>
 
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
-                <a href="#about" class="hover:text-white transition-colors relative group">About<span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                <a href="#stack" class="hover:text-white transition-colors relative group">Stack<span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                <a href="#projects" class="hover:text-white transition-colors relative group">Projects<span
-                        class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
-                <a href="#contact"
-                    class="px-4 py-2 rounded-full border border-gray-700 hover:border-primary hover:text-white hover:bg-primary/10 transition-all">Contact
-                    Me</a>
-            </div>
+    <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-300">
+      <a href="#about" class="hover:text-white transition-colors relative group">About<span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
+      <a href="#stack" class="hover:text-white transition-colors relative group">Stack<span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
+      <a href="#projects" class="hover:text-white transition-colors relative group">Projects<span
+          class="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span></a>
+      <a href="#contact"
+        class="px-4 py-2 rounded-full border border-gray-700 hover:border-primary hover:text-white hover:bg-primary/10 transition-all">Contact
+        Me</a>
+    </div>
 
-            <button class="md:hidden text-gray-300 focus:outline-none" id="mobile-menu-btn">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
+    <button class="md:hidden text-gray-300 focus:outline-none p-2 rounded-lg hover:bg-white/5 transition-colors" id="mobile-menu-btn">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
 
-        <div class="md:hidden hidden absolute top-full left-0 w-full glass border-b border-gray-800" id="mobile-menu">
-            <div class="flex flex-col p-4 space-y-4 text-center">
-                <a href="#about" class="text-gray-300 hover:text-white">About</a>
-                <a href="#stack" class="text-gray-300 hover:text-white">Stack</a>
-                <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
-                <a href="#contact" class="text-primary font-semibold">Contact Me</a>
-            </div>
-        </div>
-    </nav>
+  <!-- Mobile Menu -->
+  <div
+    class="md:hidden hidden absolute top-full left-0 w-full bg-[#0a0a0a]/95 backdrop-blur-xl border-b border-white/10 shadow-2xl"
+    id="mobile-menu"
+  >
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex flex-col space-y-2 text-center">
+        <a href="#about" class="mobile-nav-link py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors">About</a>
+        <a href="#stack" class="mobile-nav-link py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors">Stack</a>
+        <a href="#projects" class="mobile-nav-link py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors">Projects</a>
+        <a href="#contact" class="mobile-nav-link py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-colors">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <section id="about" class="relative z-10 min-h-screen flex items-center justify-center">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -697,83 +702,161 @@
         </div>
     </footer>
 
-    <script>
-        lucide.createIcons();
+<script>
+  lucide.createIcons();
 
-        const textElement = document.getElementById("typewriter");
-        const phrases = [
-            "full-stack engineering.",
-            "data engineering.",
-            "AI/LLM integrations.",
-            "ETL pipelines.",
-        ];
-        let phraseIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
+  const textElement = document.getElementById("typewriter");
+  const phrases = [
+    "full-stack engineering.",
+    "data engineering.",
+    "AI/LLM integrations.",
+    "ETL pipelines.",
+  ];
+  let phraseIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
 
-        function type() {
-            const currentPhrase = phrases[phraseIndex];
-            if (isDeleting) {
-                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
-                charIndex++;
-            }
-            if (!isDeleting && charIndex === currentPhrase.length) {
-                isDeleting = true;
-                setTimeout(type, 2000);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                phraseIndex = (phraseIndex + 1) % phrases.length;
-                setTimeout(type, 500);
-            } else {
-                setTimeout(type, isDeleting ? 50 : 100);
-            }
-        }
-        type();
+  function type() {
+    const currentPhrase = phrases[phraseIndex];
+    if (isDeleting) {
+      textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+      charIndex--;
+    } else {
+      textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+      charIndex++;
+    }
+    if (!isDeleting && charIndex === currentPhrase.length) {
+      isDeleting = true;
+      setTimeout(type, 2000);
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      phraseIndex = (phraseIndex + 1) % phrases.length;
+      setTimeout(type, 500);
+    } else {
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+  }
+  type();
 
-        // 2. Scroll Reveal
-        const revealElements = document.querySelectorAll(".reveal");
-        const revealObserver = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) entry.target.classList.add("active");
-                });
-            },
-            { threshold: 0.1 },
-        );
-        revealElements.forEach((el) => revealObserver.observe(el));
+  // 2. Scroll Reveal
+  const revealElements = document.querySelectorAll(".reveal");
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add("active");
+      });
+    },
+    { threshold: 0.1 }
+  );
+  revealElements.forEach((el) => revealObserver.observe(el));
 
-        // 3. Custom Cursor
-        const cursorDot = document.querySelector(".cursor-dot");
-        const cursorOutline = document.querySelector(".cursor-outline");
-        window.addEventListener("mousemove", (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
-            cursorOutline.animate(
-                { left: `${posX}px`, top: `${posY}px` },
-                { duration: 500, fill: "forwards" },
-            );
+  // 3. Custom Cursor
+  const cursorDot = document.querySelector(".cursor-dot");
+  const cursorOutline = document.querySelector(".cursor-outline");
+  window.addEventListener("mousemove", (e) => {
+    const posX = e.clientX;
+    const posY = e.clientY;
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
+    cursorOutline.animate(
+      { left: `${posX}px`, top: `${posY}px` },
+      { duration: 500, fill: "forwards" }
+    );
+  });
+  document.querySelectorAll("a, button, .skill-card").forEach((el) => {
+    el.addEventListener("mouseenter", () => {
+      cursorOutline.style.transform = "translate(-50%, -50%) scale(1.5)";
+      cursorOutline.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+    });
+    el.addEventListener("mouseleave", () => {
+      cursorOutline.style.transform = "translate(-50%, -50%) scale(1)";
+      cursorOutline.style.backgroundColor = "transparent";
+    });
+  });
+
+  // 4. Mobile Menu (toggle + close on selection + highlight current section in view)
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  const mobileLinks = menu ? Array.from(menu.querySelectorAll(".mobile-nav-link")) : [];
+
+  // Track what section is currently "active" in the viewport
+  const sectionIds = ["about", "stack", "projects", "contact"];
+  const sections = sectionIds
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
+
+  let currentSectionId = sections[0]?.id || "about";
+
+  const setMobileActive = (activeEl) => {
+    mobileLinks.forEach((a) => {
+      a.classList.remove("text-primary", "font-semibold", "bg-primary/10", "hover:bg-primary/15");
+      a.classList.add("text-gray-300", "hover:text-white", "hover:bg-white/5");
+    });
+
+    if (!activeEl) return;
+
+    activeEl.classList.remove("text-gray-300", "hover:bg-white/5");
+    activeEl.classList.add("text-primary", "font-semibold", "bg-primary/10", "hover:bg-primary/15");
+  };
+
+  const setMobileActiveFromViewport = () => {
+    const link = mobileLinks.find((a) => a.getAttribute("href") === `#${currentSectionId}`);
+    setMobileActive(link || null);
+  };
+
+  // Observe sections so currentSectionId follows the user's scroll position
+  if (sections.length) {
+    const sectionObserver = new IntersectionObserver(
+      (entries) => {
+        // Pick the intersecting entry closest to the top "reading zone"
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            currentSectionId = entry.target.id;
+          }
         });
-        document.querySelectorAll("a, button, .skill-card").forEach((el) => {
-            el.addEventListener("mouseenter", () => {
-                cursorOutline.style.transform = "translate(-50%, -50%) scale(1.5)";
-                cursorOutline.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-            });
-            el.addEventListener("mouseleave", () => {
-                cursorOutline.style.transform = "translate(-50%, -50%) scale(1)";
-                cursorOutline.style.backgroundColor = "transparent";
-            });
-        });
+      },
+      {
+        // This makes the "active" section be the one around the upper-middle of the screen
+        root: null,
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0,
+      }
+    );
 
-        // 4. Mobile Menu
-        const btn = document.getElementById("mobile-menu-btn");
-        const menu = document.getElementById("mobile-menu");
-        btn.addEventListener("click", () => menu.classList.toggle("hidden"));
-    </script>
+    sections.forEach((sec) => sectionObserver.observe(sec));
+  }
+
+  // Open/close menu, and when opening: highlight section currently in view
+  btn?.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    if (!menu.classList.contains("hidden")) {
+      setMobileActiveFromViewport();
+    }
+  });
+
+  // Close the menu when a link is clicked (and apply selected styling immediately)
+  mobileLinks.forEach((a) => {
+    a.addEventListener("click", () => {
+      setMobileActive(a);
+      menu.classList.add("hidden");
+    });
+  });
+
+  // On load, set the correct highlight (use viewport-derived section)
+  document.addEventListener("DOMContentLoaded", () => {
+    setMobileActiveFromViewport();
+  });
+
+  // If someone navigates via hash (e.g., back/forward), keep highlight in sync
+  window.addEventListener("hashchange", () => {
+    const hash = window.location.hash?.replace("#", "");
+    if (hash && sectionIds.includes(hash)) {
+      currentSectionId = hash;
+      setMobileActiveFromViewport();
+    }
+  });
+</script>
+
 </body>
 
 </html>
