@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="3D keyboard key D (dark)">
+  <defs>
+    <linearGradient id="keyTopDark" x1="56" y1="52" x2="206" y2="212" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2b2d33"/>
+      <stop offset="0.55" stop-color="#15161b"/>
+      <stop offset="1" stop-color="#0b0c10"/>
+    </linearGradient>
+
+    <linearGradient id="keySideDark" x1="70" y1="78" x2="220" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0b0f"/>
+      <stop offset="1" stop-color="#05060a"/>
+    </linearGradient>
+
+    <linearGradient id="strokeGrad" x1="40" y1="40" x2="216" y2="216" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="0.5" stop-color="#8b5cf6"/>
+      <stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="letterGradDark" x1="96" y1="80" x2="176" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfd4ff"/>
+    </linearGradient>
+
+    <filter id="keyShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+
+    <filter id="letterShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- 3D base / side -->
+  <g filter="url(#keyShadow)">
+    <rect x="44" y="48" width="180" height="180" rx="44" fill="url(#keySideDark)"/>
+    <!-- top face -->
+    <rect x="32" y="32" width="180" height="180" rx="44" fill="url(#keyTopDark)" stroke="url(#strokeGrad)" stroke-width="2"/>
+    <!-- subtle inner border -->
+    <rect x="38" y="38" width="168" height="168" rx="38" fill="none" stroke="#FFFFFF" stroke-opacity="0.10"/>
+
+    <!-- highlight sweep -->
+    <path d="M54 70 C70 52, 100 44, 132 44" fill="none" stroke="#FFFFFF" stroke-opacity="0.20" stroke-width="4" stroke-linecap="round"/>
+    <path d="M50 92 C66 74, 98 64, 126 62" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Letter D -->
+  <g filter="url(#letterShadow)">
+    <!-- small “extrusion” for the letter -->
+    <path d="M95 80H127C160 80 178 98 178 128C178 158 160 176 127 176H95V80Z
+             M113 98H127C149 98 160 109 160 128C160 147 149 158 127 158H113V98Z"
+          fill="#000000" opacity="0.18" transform="translate(2 2)" fill-rule="evenodd"/>
+
+    <path d="M92 78H124C156 78 174 96 174 128C174 160 156 178 124 178H92V78Z
+             M110 96H124C145 96 156 107 156 128C156 149 145 160 124 160H110V96Z"
+          fill="url(#letterGradDark)" fill-rule="evenodd"/>
+  </g>
+</svg>
